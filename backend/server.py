@@ -6,6 +6,8 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+
+
 MODEL_NAME = 'qwen2.5-coder:7b'
 
 
