@@ -1,14 +1,14 @@
 # LocalPilot: Offline AI Code Autocompletion for VSCode
 
 ## 🚀 Overview
-LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCode, designed to boost developer productivity without relying on external APIs. Powered by **CodeGemma:7B** from **Ollama** and served locally using **FastAPI**, LocalPilot provides fast, accurate, and context-aware code suggestions with complete data privacy.
+LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCode, designed to boost developer productivity without relying on external APIs. Powered by **qwen2.5-coder:7b** from **Ollama** and served locally using **FastAPI**, LocalPilot provides fast, accurate, and context-aware code suggestions with complete data privacy.
 
 ### This is a basic implementation of what I really want to do.
 ---
 
 ## ✨ Key Features
 - **💡 50% Boost in Developer Productivity:** Fast, intelligent, multi-line completions and inline documentation.
-- **⚙️ Powered by CodeGemma:** Built on the lightweight, optimized CodeGemma:7B LLM for high-quality code suggestions.
+- **⚙️ Powered by qwen2.5-coder:7b :** Built on the lightweight, optimized qwen2.5-coder:7b LLM for high-quality code suggestions.
 - **🖥️ Local-Only Inference:** 100% offline with zero external API dependencies.
 - **⚡ Low-Latency Completions:** FastAPI backend optimized for quick inference.
 - **🔒 Complete Data Privacy:** No data leaves your local machine.
@@ -17,7 +17,7 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 ---
 
 ## 🛠️ Technology Stack
-- **Model:** CodeGemma:7B from Ollama
+- **Model:** qwen2.5-coder:7b from Ollama
 - **Backend:** FastAPI (Python)
 - **IDE Extension:** VSCode (TypeScript)
 - **GPU:** Local NVIDIA RTX 4080 Super / Any GPU with 5GB VRAM or more
@@ -27,7 +27,7 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 ## 📂 Installation & Setup
 ### Prerequisites:
 - Python 3.10+
-- Ollama with CodeGemma Model
+- Ollama with qwen2.5-coder:7b Model
 - NVIDIA CUDA Toolkit (for GPU acceleration)
 
 ### 1. Clone the Repository
