@@ -27,7 +27,6 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 ## 📂 Installation & Setup
 ### Prerequisites:
 - Python 3.10+
-- Docker
 - Ollama with CodeGemma Model
 - NVIDIA CUDA Toolkit (for GPU acceleration)
 
