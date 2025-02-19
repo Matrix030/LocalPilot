@@ -34,14 +34,11 @@ def call_ollama_model(prompt: str) -> str:
         return " # Error generating suggestion"
 
 def format_prompt(context: str) -> str:
-    """
-    Formats the prompt to instruct the model to generate a valid code completion.
-    """
-    # prompt = f"### You are an AI code Autocompletion tool, Task:You have the following code snippet. Your job is to predict the next line of code. Please produce only one single line to complete the code that logically follows from the snippet.Do not include any additional text, explanations, or commentary.### Code Snippet:{context}"
+    
     prompt = f"""
 CODE COMPLETION TASK
 You are a highly skilled AI coding assistant. Your job is to analyze the following code snippet and generate the exact next line of code that logically and syntactically continues the snippet.
-Constraints:
+Constraints:s
 - Do not rewrite the context which is being provided.
 - Do not wrap your output in markdown formatting.
 - Output exactly one single line of code.
