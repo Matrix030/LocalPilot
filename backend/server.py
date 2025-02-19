@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-MODEL_NAME = 'codegemma:7b'
+MODEL_NAME = 'qwen2.5-coder:7b'
 
 
 class AutoCompleteRequest(BaseModel):
