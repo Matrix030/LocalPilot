@@ -20,7 +20,6 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 - **Model:** CodeGemma:7B from Ollama
 - **Backend:** FastAPI (Python)
 - **IDE Extension:** VSCode (TypeScript)
-- **Deployment:** Docker
 - **GPU:** Local NVIDIA RTX 4080 Super / Any GPU with 5GB VRAM or more
 
 ---
@@ -43,22 +42,22 @@ cd localpilot
 pip install -r requirements.txt
 ```
 
-### 3. Run the Backend
-```bash
-docker-compose up --build
+### 3. Run the server
+```
+cd backend
+python .\server.py
 ```
 
 ### 4. Install the VSCode Extension
 - Open the `vscode-extension` folder in VSCode.
 - Run `npm install` and `npm run build`.
-- Load the extension via VSCode’s extension development host.
+- Load the extension via VSCode’s extension development host. (Press F5)
 
 ---
 
 ## 🚀 Usage
 - Start coding in VSCode.
-- View real-time autocompletions from LocalPilot.
-- Inline documentation will be provided for recognized functions.
+- Press 'Control + Space' for autocompletions from LocalPilot.
 
 ---
 
