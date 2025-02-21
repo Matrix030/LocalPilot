@@ -10,7 +10,7 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 - **💡 50% Boost in Developer Productivity:** Fast, intelligent, multi-line completions and inline documentation.
 - **⚙️ Powered by qwen2.5-coder:7b :** Built on the lightweight, optimized qwen2.5-coder:7b LLM for high-quality code suggestions.
 - **🖥️ Local-Only Inference:** 100% offline with zero external API dependencies.
-- **⚡ Low-Latency Completions:** FastAPI backend optimized for quick inference.
+- **⚡ Low-Latency Completions:** sub 50ms one-line autocompletions with range from 50ms - 200ms for more complex tasks
 - **🔒 Complete Data Privacy:** No data leaves your local machine.
 - **💻 Seamless VSCode Integration:** Easy-to-use extension with real-time autocompletion.
 
@@ -28,7 +28,6 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 ### Prerequisites:
 - Python 3.10+
 - Ollama with qwen2.5-coder:7b Model
-- NVIDIA CUDA Toolkit (for GPU acceleration)
 
 ### 1. Clone the Repository
 ```bash
