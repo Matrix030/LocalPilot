@@ -1,7 +1,7 @@
 # LocalPilot: Offline AI Code Autocompletion for VSCode
 
 ## 🚀 Overview
-LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCode, designed to boost developer productivity without relying on external APIs. Powered by **qwen2.5-coder:7b** from **Ollama** and served locally using **FastAPI**, LocalPilot provides fast, accurate, and context-aware code suggestions with complete data privacy.
+LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCode, designed to boost developer productivity without relying on external APIs. Powered by **qwen2.5-coder:7b** from **Ollama** and served locally, LocalPilot provides fast, accurate, and context-aware code suggestions with complete data privacy.
 
 ### This is a basic implementation of what I really want to do.
 ---
@@ -18,7 +18,7 @@ LocalPilot is a fully offline AI-powered code autocompletion tool built for VSCo
 
 ## 🛠️ Technology Stack
 - **Model:** qwen2.5-coder:7b from Ollama
-- **Backend:** FastAPI (Python)
+- **Backend:** Typescript (vscode)
 - **IDE Extension:** VSCode (TypeScript)
 - **GPU:** Local NVIDIA RTX 4080 Super / Any GPU with 5GB VRAM or more
 
@@ -36,18 +36,8 @@ git clone https://github.com/yourusername/localpilot.git
 cd localpilot
 ```
 
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the server
-```
-cd backend
-python .\server.py
-```
-
-### 4. Install the VSCode Extension
+### 2. Install the VSCode Extension
+- Make sure you have `ollama` installed with `qwen2.5-coder:7b` downloaded
 - Open the `vscode-extension` folder in VSCode.
 - Run `npm install` and `npm run build`.
 - Load the extension via VSCode’s extension development host. (Press F5)
