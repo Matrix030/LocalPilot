@@ -13,17 +13,17 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-        {
-            "command": "ollamaCopilot.suggest",
-            "title": "Ollama Autocomplete"
-        }
+      {
+        "command": "ollamaCopilot.suggest",
+        "title": "Ollama Autocomplete"
+      }
     ],
     "keybindings": [
-        {
-            "command": "ollamaCopilot.suggest",
-            "key": "ctrl+space",
-            "when": "editorTextFocus"
-        }
+      {
+        "command": "ollamaCopilot.suggest",
+        "key": "ctrl+space",
+        "when": "editorTextFocus"
+      }
     ],
     "languages": [
       {
@@ -61,6 +61,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "axios": "^1.7.9"
+    "axios": "^1.7.9",
+    "ollama": "^0.5.13"
   }
 }
